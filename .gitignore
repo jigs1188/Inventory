@@ -1,0 +1,48 @@
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Node
+node_modules/
+.next/
+out/
+build/
+dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python
+backend/venv/
+backend/__pycache__/
+backend/*.db
+*.pyc
+*.pyo
+*.egg-info/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# AI Notes (keep locally, don't push)
+BUILD_SUMMARY.txt
+DEPLOYMENT.md
+DESIGN_REFRESH_COMPLETE.md
+DOCS.md
+FILE_INDEX.md
+IMPLEMENTATION_SUMMARY.md
+QUICKSTART.md
+START_HERE.md
+UI_UX_IMPROVEMENTS.md
+VISUAL_IMPROVEMENTS_SUMMARY.txt
+task.md
+implementation_plan.md
+walkthrough.md
