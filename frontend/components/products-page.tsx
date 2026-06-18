@@ -180,10 +180,10 @@ export default function ProductsPage() {
                 <label className="block text-sm font-medium text-foreground mb-1">Stock Quantity</label>
                 <Input
                   type="number"
-                  min="0"
+                  min="1"
                   value={formData.stock_quantity}
                   onChange={(e) => setFormData({ ...formData, stock_quantity: e.target.value })}
-                  placeholder="0"
+                  placeholder="1"
                   required
                 />
               </div>

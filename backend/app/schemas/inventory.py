@@ -9,7 +9,7 @@ class ProductBase(BaseModel):
     name: str
     description: Optional[str] = None
     price: float = Field(ge=0)
-    stock_quantity: int = Field(ge=0)
+    stock_quantity: int = Field(gt=0)
 
 
 class ProductCreate(ProductBase):
