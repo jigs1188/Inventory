@@ -25,6 +25,9 @@ export const isAuthenticated = () => {
 };
 
 export const fetchWithAuth = async (url: string, options: RequestInit = {}) => {
+  const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+  const finalUrl = url.replace('http://localhost:8000', API_URL);
+
   const token = getToken();
   
   const headers = new Headers(options.headers || {});
@@ -36,7 +39,7 @@ export const fetchWithAuth = async (url: string, options: RequestInit = {}) => {
     headers.set("Content-Type", "application/json");
   }
 
-  const response = await fetch(url, {
+  const response = await fetch(finalUrl, {
     ...options,
     headers,
   });
